@@ -1,0 +1,20 @@
+{
+  "name": "magpie-workbuddy-search",
+  "version": "0.1.0",
+  "description": "Magpie web search using the existing WorkBuddy AI login",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": ["index.mjs", "src/", "README.md", "README.zh-CN.md", "LICENSE"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/wanglz111/magpie-workbuddy-search.git" },
+  "homepage": "https://github.com/wanglz111/magpie-workbuddy-search#readme",
+  "bugs": { "url": "https://github.com/wanglz111/magpie-workbuddy-search/issues" },
+  "keywords": ["magpie", "magpie-plugin", "opencode-plugin", "workbuddy", "web-search"],
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "peerDependencies": {
+    "@magpie-community/opencode-workbuddy-auth": ">=0.1.24"
+  },
+  "engines": { "node": ">=22" },
+  "magpie": { "maxConcurrency": 2 }
+}
